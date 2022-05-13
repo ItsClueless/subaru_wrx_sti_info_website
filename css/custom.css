@@ -1,0 +1,400 @@
+:root{
+    --main-bg-color: rgba(70, 70, 70);
+    --main-text-color: rgb(0, 0, 0);
+    --main-bg-color-rgba: rgb(42 79 204 / 70%);
+    --nav-bg-color:  rgb(195 202 34);
+    --background-odd: rgb(126 171 160 / 50%);
+    --background-even: rgb(162 163 187);
+}
+
+html{
+    background-image: url(../images/subaru_rally_image.jpg); /* https://www.subaru.com/content/dam/subaru/motorsports/styles/page/downloads/0LG_5242/0LG_5242_2460x1600.jpg */
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 1%;
+    color: rgb(195 202 34);
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+nav a:link{
+    background-color:var(--nav-bg-color);
+    color:#af1a44;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a{
+    display: inline-block;
+    width: 20%;
+    color: #3728cd;
+}
+
+
+nav{
+    border: thin solid rgb(25 25 27);
+    background-color: rgb(195 202 34);
+    text-align: center;
+}
+
+main{
+    background-color: var(--main-bg-color-rgba);
+    padding: 1%;
+    margin: auto;
+}
+
+body{
+    border: thin solid var(--main-color);
+    line-height: 1.3em;
+    max-width: 70em;
+    margin: 1% auto;
+}
+
+a:hover{
+    text-decoration:line-through;
+    color: black;
+}
+
+:visited{
+    color: darkred;
+}
+
+a{
+    color: #c3ca22;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    padding: 2%;
+}
+
+p{
+    text-indent: 1.5em;
+}
+
+figure{
+    float: left;
+    text-align: center;
+    width: 25em;
+    border: thin solid red;
+}
+
+figcaption{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1%;
+}
+
+img{
+    max-width: 100%;
+}
+
+cite{
+    font-size: xx-small;
+}
+
+caption{
+    text-decoration: underline;
+}
+
+table{
+    border: thin solid red;
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+tr:hover{
+    color: lemonchiffon;
+}
+li:hover{
+    color: lemonchiffon;
+}
+
+tr:nth-child(odd){
+    background-color: var(--background-odd);
+}
+
+tr:nth-child(even){
+    background-color: var(--background-even);
+}
+tr:nth-child(even) a{
+    color:blue;
+ }
+ 
+ tr:nth-child(even) a:hover{
+    color:#000000;
+ }
+
+ tr:nth-child(even) :visited{
+    color: darkred;;
+ }
+
+th{
+    border: thin solid darkgray;
+}
+
+td{
+    border: thin solid black;
+}
+
+tr{
+    border: thin solid black;
+}
+
+.img-curve{
+    border-radius: 5%;
+}
+
+.fig-curve{
+    border-radius: 5%;
+}
+
+.p-clear{
+    clear: both;
+}
+
+
+
+li:nth-child(odd){
+    background-color: var(--background-odd);
+}
+
+li:nth-child(even){
+    background-color: var(--background-even);
+}
+
+li:nth-child(even) a{
+    color:blue;
+ }
+ 
+ li:nth-child(even) a:hover{
+    color:#000000;
+ }
+
+ li:nth-child(even) :visited{
+    color: darkred;;
+ }
+
+footer{
+    border: thin solid rgb(0 0 0);
+    background-color: rgb(195 202 34);
+    text-align: center;
+}
+
+footer a{
+    color: #3728cd;
+}
+
+form{
+    background-color:rgb(195 202 34);
+    clear: both;
+    width: 90%;
+    margin: auto;
+}
+
+form p{
+    text-indent: .05%;
+}
+
+form legend{
+    text-align: left;
+    font-size: larger;
+}
+
+fieldset {
+    padding: 0.5%;
+    border: none;
+}
+
+label {
+    display: block;
+    font-size: large;
+}
+
+.radio label,
+.checkbox label {
+    display: inline;
+}
+
+.radio legend,
+.checkbox legend{
+    padding-top: 2em
+}
+
+.radio,
+.checkbox{
+    background-color:rgb(133 151 171);
+}
+
+input {
+    margin-top: .5%;
+    width: 95%;
+}
+
+textarea {
+    width: 95%;
+}
+
+select {
+    width: 95%;
+}
+
+.Infomation legend{
+    font-size: x-large;
+}
+
+input[type="text"]{
+    background: rgb(133 151 171);
+    font-size: medium;
+}
+
+.Infomation input[type="text"]{
+    text-transform:capitalize;
+}
+
+input[type="radio"]{
+    width: initial;
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    width: initial;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    text-decoration:underline;
+}
+
+input[type="submit"] {
+    background: black;
+    color: #84839d;
+    font-size: x-large;
+    padding: .5%;
+}
+
+
+
+
+main{
+    display: grid;
+    grid-template-areas: "pg-heading pg-heading pg-heading" "section-one section-two section-three" "section-four section-four section-four" "section-five section-five section-five";
+    grid-template-columns: 33% 33% 33%;
+}
+
+figure{
+    width: auto;
+}
+
+main h1:first-child{
+    grid-area: pg-heading;
+}
+
+.sti-info,
+.gc8-gen,
+.rally-begin{
+    grid-area: section-one;
+    margin: 3%;
+}
+
+.wrx-vs-sti,
+.gd-gen,
+.ara-rally{
+    grid-area: section-two;
+    margin: 3%;
+}
+
+ .why-sti,
+ .narrow-wide-body,
+ .ara-drivers{
+    grid-area: section-three;
+    margin: 3%;
+}
+
+.models-avail,
+.va-gen,
+.rallycross{
+   grid-area: section-four;
+   margin: 3%;
+}
+
+.rallycross figure+h3{
+    clear:both;
+}
+.rallycross figure{
+    margin-left: 30%;
+    width:25em;
+}
+
+
+.future,
+.present-info,
+.wins-future{
+   grid-area: section-five;
+   margin: 3%;
+}
+
+.form-page main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: auto;
+}
+
+.form-page figure {
+    margin: 1%;
+    width: 30%;
+}
+
+.form-page main:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-page .form-direct{
+    grid-column: 1 / span 3;
+    grid-row: 1 ;
+}
+
+.form-page .form-info {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+.form-page .form-begin-image{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.form-page .form-questions{
+    grid-column: 1/ span 3;
+    grid-row: 4 / span 3;
+}
+
+.form-page .form-feedback {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.form-page .form-end-image{
+    grid-column: 1 / span 3;
+    grid-row: 8;
+}
+
+.activePage{
+    background-color: #62c778;    
+}

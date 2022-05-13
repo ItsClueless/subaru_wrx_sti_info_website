@@ -1,0 +1,71 @@
+main{
+    display: grid;
+    grid-template-areas: "pg-heading pg-heading" "section-one section-two " "section-three section-three " "section-four section-four" "section-five section-five";
+    grid-template-columns: 49% 49%;    
+}
+
+h1{
+    line-height: 1.55em;
+}
+
+.why-sti h2{
+    clear: both;
+}
+
+.rallycross figure{
+    margin-left: 15%;
+}
+
+.rallycross h3{
+    clear :both
+}
+
+table{
+    width: auto;
+}
+
+.form-page main {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: auto;
+}
+
+.form-page figure {
+    margin: 1%;
+    width: 30%;
+}
+
+.form-page main:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-page .form-direct{
+    grid-column: 1 / span 2;
+    grid-row: 1 ;
+}
+
+.form-page .form-info {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.form-page .form-begin-image{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.form-page .form-questions{
+    grid-column: 1/ span 2;
+    grid-row: 4 / span 3;
+}
+
+.form-page .form-feedback {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+}
+
+.form-page .form-end-image{
+    grid-column: 1 / span 2;
+    grid-row: 8;
+}
