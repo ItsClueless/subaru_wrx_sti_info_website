@@ -40,7 +40,6 @@ include 'top.php';
                     <li>Side arm rest in the 2020+ models</li>
                 </ul>
             </li>
-            <li>Sources: <a href=""></a></li>
         </ul>
 
     </section>
